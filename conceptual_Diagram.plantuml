@@ -1,0 +1,37 @@
+@startuml attraction
+
+class Event{
+code
+name
+datestart
+dateend
+}
+
+class Site{
+code
+name
+}
+
+class Address{
+street
+number
+pincode
+}
+
+class City{
+code
+name
+country
+}
+
+class Organizer{
+code
+name
+}
+
+City "1" --right--> "0..*" Address : contains
+Site "1" --right--> "1" Address : has
+Event "0..*" --right--> "1" Site : takes place
+Organizer "0..*" -up-> "0..*" Event : organizes
+
+@enduml

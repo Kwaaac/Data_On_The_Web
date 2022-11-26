@@ -1,0 +1,37 @@
+{
+    "@context": "http://www.w3.org/ns/csvw",
+    "url": "city.csv",
+    "tableSchema": {
+        "columns": [{
+            "name": "code",
+            "titles": {
+                "en": "code",
+                "de": "code"
+            },
+            "dc:description": {
+                "en": "The unique code of the city.",
+                "de": "Der eindeutige Code der Stadt"
+            },
+            "datatype": "string",
+            "required": true
+        },{
+            "titles": {
+                "en": "name",
+                "de": "name"
+            },
+            "dc:description": "The unique name of the city.",
+            "datatype": "string",
+            "required": true
+        },
+        {
+            "titles": {
+                "en": "country",
+                "de": "land"
+            },
+            "dc:description": "The associated country.",
+            "datatype": "string",
+            "required": true
+        }],
+        "primaryKey": "code"
+    }
+}

@@ -1,0 +1,74 @@
+[
+    {
+        "code": "3",
+        "name": "Weihnachtsmarkt",
+        "site": [{
+            "code": "3",
+            "name": "Weihnachtsmarkt",
+            "address":[{
+                "code":"3",
+                "street":"Neupfarrplatz",
+                "number":"",
+                "pin_code":"94047",
+                "city":[{
+                    "code":"3",
+                    "name":"Regensburg",
+                    "country":"Germany"
+                }]
+            }]
+        }],
+        "organizer": [{
+            "code": "3",
+            "name": "City of Regensburg"
+        }],
+        "start_date":"2022-11-13",
+        "end_date":"2022-12-23"
+    },
+    {
+        "code": "4",
+        "name": "Christmas Garden",
+        "site": [{
+            "code": "4",
+            "name": "Botanische Garten",
+            "address":[{
+                "code":"4",
+                "street":"Konigin-Luise-Strasse",
+                "number":"6",
+                "pin_code":"14195",
+                "city":[{
+                    "code":"4",
+                    "name":"Berlin",
+                    "country":"Germany"
+                }]
+            },
+            {
+                "code":"5",
+                "street":"Konigin-Luise-Strasse",
+                "number":"7",
+                "pin_code":"14195",
+                "city":[{
+                    "code":"4",
+                    "name":"Berlin",
+                    "country":"Germany"
+                }]
+            },
+            {
+                "code":"6",
+                "street":"Konigin-Luise-Strasse",
+                "number":"8",
+                "pin_code":"14195",
+                "city":[{
+                    "code":"4",
+                    "name":"Berlin",
+                    "country":"Germany"
+                }]
+            }]
+        }],
+        "organizer": [{
+            "code": "4",
+            "name": "City of Berlin"
+        }],
+        "start_date":"2022-11-16",
+        "end_date":"2023-01-15"
+    }
+]

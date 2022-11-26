@@ -1,3 +1,5 @@
-code;Name;
-1;OktoberFest;
-2;Herbstdult;
+code,name,site_code,organizer_code,start_date,end_date
+1,OktoberFest,1,1,2022-09-17,2022-10-03
+2,Herbstdult,2,2,2022-09-09,2022-09-18
+3,Weihnachtsmarkt,3,3,2022-11-13,2022-12-23
+4,Christmas Garden,4,4,2022-11-16,2023-01-15

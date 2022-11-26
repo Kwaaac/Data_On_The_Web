@@ -1,0 +1,56 @@
+
+{
+    "@context": "http://www.w3.org/ns/csvw",
+    "url": "address.csv",
+    "tableSchema": {
+        "columns": [{
+            "name": "code",
+            "titles": {
+                "en": "code",
+                "de": "code"
+            },
+            "dc:description": {
+                "en": "The unique code of the address.",
+                "de": "Der eindeutige Code der Adresse"
+            },
+            "datatype": "string",
+            "required": true
+        },{
+            "titles": {
+                "en": "street",
+                "de": "Straße"
+            },
+            "dc:description": "The name of the street.",
+            "datatype": "string",
+            "required": false
+        },
+        {
+            "titles": {
+                "en": "number",
+                "de": "nummer"
+            },
+            "dc:description": "The street number.",
+            "datatype": "integer",
+            "required": false
+        },
+        {
+            "titles": {
+                "en": "pin_code",
+                "de": "Geheimzahl"
+            },
+            "dc:description": "The area pin code.",
+            "datatype": "integer",
+            "required": false
+        },
+        {
+            "titles": {
+                "en": "city_code",
+                "de": "stadt_code"
+            },
+            "dc:description": "The city code. fk_city.csv",
+            "datatype": "integer",
+            "required": true
+        }],
+        "primaryKey": "code"
+    }
+}

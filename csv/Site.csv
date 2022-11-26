@@ -1,3 +1,5 @@
-Code;Name;
-1;Thresienwiese;
-2;Peb;
+code,name,address_code
+1,Thresienwiese,1
+2,Peb,2
+3,Weihnachtsmarkt,3
+4,Botanische Garten,4

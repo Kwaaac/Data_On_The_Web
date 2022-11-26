@@ -1,3 +1,5 @@
-code,street,number,pin_code
-1,St. Paul-Strasse,,80336
-2,,,94036
+code,street,number,pin_code,city_code
+1,St. Paul-Strasse,,80336,1
+2,,,94036,2
+3,Neupfarrplatz,,94047,3
+4,Konigin-Luise-Strasse,6,14195,4

@@ -1,0 +1,62 @@
+{
+    "@context": "http://www.w3.org/ns/csvw",
+    "url": "event.csv",
+    "tableSchema": {
+        "columns": [{
+            "name": "code",
+            "titles": {
+                "en": "code",
+                "de": "code"
+            },
+            "dc:description": {
+                "en": "The unique code of the event.",
+                "de": "Der eindeutige Code des Ereignisses"
+            },
+            "datatype": "string",
+            "required": true
+        },{
+            "titles": {
+                "en": "name",
+                "de": "name"
+            },
+            "dc:description": "The unique name of the event.",
+            "datatype": "string",
+            "required": true
+        },{
+            "titles": {
+                "en": "site_code",
+                "de": "site_code"
+            },
+            "dc:description": "The site code of the event. fk_site.csv",
+            "datatype": "integer",
+            "required": true
+        },
+        {
+            "titles": {
+                "en": "organizer_code",
+                "de": "veranstalter_code"
+            },
+            "dc:description": "The organizer code of the event. fk_organizer.csv",
+            "datatype": "integer",
+            "required": true
+        },
+        {
+            "titles": {
+                "en": "start_date",
+                "de": "start_datum"
+            },
+            "dc:description": "The start date of the event.",
+            "datatype": "date",
+            "required": true
+        },{
+            "titles": {
+                "en": "end_date",
+                "de": "end_datum"
+            },
+            "dc:description": "The end date of the event.",
+            "datatype": "date",
+            "required": true
+        }],
+        "primaryKey": "code"
+    }
+}

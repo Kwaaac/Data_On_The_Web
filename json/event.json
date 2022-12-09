@@ -2,22 +2,22 @@
     {
         "code": "3",
         "name": "Weihnachtsmarkt",
-        "site": [{
+        "sites": [{
             "code": "3",
             "name": "Weihnachtsmarkt",
-            "address":[{
+            "addresses":[{
                 "code":"3",
                 "street":"Neupfarrplatz",
                 "number":"",
                 "pin_code":"94047",
-                "city":[{
+                "city":{
                     "code":"3",
                     "name":"Regensburg",
                     "country":"Germany"
-                }]
+                }
             }]
         }],
-        "organizer": [{
+        "organizers": [{
             "code": "3",
             "name": "City of Regensburg"
         }],
@@ -27,44 +27,44 @@
     {
         "code": "4",
         "name": "Christmas Garden",
-        "site": [{
+        "sites": [{
             "code": "4",
             "name": "Botanische Garten",
-            "address":[{
+            "addresses":[{
                 "code":"4",
                 "street":"Konigin-Luise-Strasse",
                 "number":"6",
                 "pin_code":"14195",
-                "city":[{
+                "city":{
                     "code":"4",
                     "name":"Berlin",
                     "country":"Germany"
-                }]
+                }
             },
             {
                 "code":"5",
                 "street":"Konigin-Luise-Strasse",
                 "number":"7",
                 "pin_code":"14195",
-                "city":[{
+                "city":{
                     "code":"4",
                     "name":"Berlin",
                     "country":"Germany"
-                }]
+                }
             },
             {
                 "code":"6",
                 "street":"Konigin-Luise-Strasse",
                 "number":"8",
                 "pin_code":"14195",
-                "city":[{
+                "city":{
                     "code":"4",
                     "name":"Berlin",
                     "country":"Germany"
-                }]
+                }
             }]
         }],
-        "organizer": [{
+        "organizers": [{
             "code": "4",
             "name": "City of Berlin"
         }],

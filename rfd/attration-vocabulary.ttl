@@ -1,0 +1,153 @@
+@prefix atr: <https://cu.opendata.cz/course-data-on-the-web/vocabulary/attraction/> .
+
+atr:Event a rdfs:Class;
+    rdfs:label "Attraction Places"@en ;
+    rdfs:comment "Attraction places in Germany."@en .
+
+atr:Site a rdfs:Class;
+    rdfs:label "Events Site "@en ;
+    rdfs:comment "Attraction places / evets take placee in a site"@en .
+
+atr:Address a rdfs:Class;
+    rdfs:label "Attraction/Event Address"@en ;
+    rdfs:comment "Attraction places or events has a specific address"@en .
+
+
+atr:City a rdfs:Class;
+    rdfs:label "City of Attraction places"@en ;
+    rdfs:comment "City of Attraction places."@en .
+
+
+atr:Organizer a rdfs:Class;
+    rdfs:label "Organizer of Events"@en ;
+    rdfs:comment "Every event has organizer."@en .
+
+# property of Event Class
+atr:code a rdf:Property ;
+  rdfs:label "Event Code"@en ;
+  rdfs:domain atr:Event ;
+  rdfs:range xsd:string ;
+  rdfs:comment "This is the code property for the Event class"@en .
+
+
+atr:name a rdf:Property ;
+  rdfs:label "Event Name"@en ;
+  rdfs:domain atr:Event ;
+  rdfs:range xsd:string ;
+  rdfs:comment "Name of organized events"@en .
+
+atr:datestart a rdf:Property ;
+  rdfs:label "Start Date"@en ;
+  rdfs:domain atr:Event ;
+  rdfs:range xsd:date  ;
+  rdfs:comment "Event start date"@en .
+
+atr:dateend a rdf:Property ;
+  rdfs:label "End Date"@en ;
+  rdfs:domain atr:Event ;
+  rdfs:range xsd:date ;
+  rdfs:comment "Event end date"@en .
+
+
+# property of Site Class
+atr:code a rdf:Property ;
+  rdfs:label "Site Code"@en ;
+  rdfs:domain atr:Site ;
+  rdfs:range xsd:string ;
+  rdfs:comment "This is the code property for the Site class"@en .
+
+atr:name a rdf:Property ;
+  rdfs:label "Site Name"@en ;
+  rdfs:domain atr:Site ;
+  rdfs:range xsd:string ;
+  rdfs:comment "Name of site"@en .
+
+
+# property of Address Class
+atr:code a rdf:Property ;
+  rdfs:label "Address Code"@en ;
+  rdfs:domain atr:Address ;
+  rdfs:range xsd:string ;
+  rdfs:comment "This is the code property for the Address class"@en .
+
+atr:street a rdf:Property ;
+  rdfs:label "Street Name"@en ;
+  rdfs:domain atr:City ;
+  rdfs:range xsd:string ;
+  rdfs:comment "Street Name"@en .
+
+atr:number a rdf:Property ;
+    rdfs:label "Street Name"@en ;
+    rdfs:domain atr:Address ;
+    rdfs:range xsd:number ;
+    rdfs:comment "Street Name"@en .
+
+atr:pincode a rdf:Property ;
+    rdfs:label "PIN Code"@en ;
+    rdfs:domain atr:Address ;
+    rdfs:range xsd:number ;
+    rdfs:comment "PIN Code"@en .
+
+
+# property of City Class
+atr:code a rdf:Property ;
+  rdfs:label "City Code"@en ;
+  rdfs:domain atr:City ;
+  rdfs:range xsd:string ;
+  rdfs:comment "This is the code property for the City class"@en .
+
+atr:name a rdf:Property ;
+  rdfs:label "City Name"@en ;
+  rdfs:domain atr:City ;
+  rdfs:range xsd:string ;
+  rdfs:comment "City Name"@en .
+
+
+atr:country a rdf:Property ;
+  rdfs:label "Country Name"@en ;
+  rdfs:domain atr:City ;
+  rdfs:range xsd:string ;
+  rdfs:comment "Country Name"@en .
+
+
+# property of Organizer Class
+atr:code a rdf:Property ;
+  rdfs:label "Organizer Code"@en ;
+  rdfs:domain atr:Organizer ;
+  rdfs:range xsd:string ;
+  rdfs:comment "This is the code property for the Organizer class"@en .
+
+atr:name a rdf:Property ;
+  rdfs:label "Organizer Name"@en ;
+  rdfs:domain atr:Organizer ;
+  rdfs:range xsd:string ;
+  rdfs:comment "Organizer Name"@en .
+
+
+# ================== Relations =====================
+
+# City has address 
+atr:Contain a rdf:Property ;
+    rdfs:label "City has address"@en .
+    rdfs:domain atr:City ;
+    rdfs:range atr:Address .
+
+# Site and address 
+atr:SiteHas a rdf:Property ;
+    rdfs:label "Site has address"@en .
+    rdfs:domain atr:Site ;
+    rdfs:range atr:Address .
+
+
+# Event Take Place in site
+atr:TakePlace a rdf:Property ;
+    rdfs:label "Eent take place in site"@en .
+    rdfs:domain atr:Event ;
+    rdfs:range atr:Site .
+
+# Organizer organize event
+atr:OrganizeEvent a rdf:Property ;
+    rdfs:label "Organizer organize event"@en .
+    rdfs:domain atr:Organize ;
+    rdfs:range atr:Event .
+

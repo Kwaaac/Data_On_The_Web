@@ -15,7 +15,7 @@
     },
     "url": "city.csv",
     "tableSchema": {
-        "aboutUrl": "{code}",
+        "aboutUrl":"{code}",
         "primaryKey": "code",
         "columns": [
             {
@@ -29,27 +29,33 @@
                     "de": "Der eindeutige Code der Stadt"
                 },
                 "datatype": "string",
-                "required": true
+                "required": true,
+                "propertyUrl": "evt:code"
             },
             {
-                    "name":"name",
                 "titles": {
                     "en": "name",
                     "de": "name"
                 },
                 "dc:description": "The unique name of the city.",
                 "datatype": "string",
-                "required": true
+                "required": true,
+                "propertyUrl": "evt:name"
             },
             {
-                "name":"country",
                 "titles": {
                     "en": "country",
                     "de": "land"
                 },
                 "dc:description": "The associated country.",
                 "datatype": "string",
-                "required": true
+                "required": true,
+                "propertyUrl": "evt:country"
+            },
+            {
+                "virtual": true,
+                "propertyUrl": "rdf:type",
+                "valueUrl": "evt:City"
             }
         ]
     }

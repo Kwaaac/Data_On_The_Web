@@ -1,0 +1,112 @@
+{
+    "@context": [
+        "https://raw.githubusercontent.com/CLARIAH/COW/master/csvw.json",
+        {
+            "@base": "https://wow.fr/events/"
+        },
+        {
+            "evt": "https://wow.fr/vocabulary/events/",
+            "sch": "https://schema.org/"
+        }
+    ],
+    "dialect": {
+        "delimiter": ",",
+        "encoding": "UTF-8",
+        "quoteChar": "\""
+    },
+    "url": "event.csv",
+    "tableSchema": {
+        "aboutUrl": "event/{code}",
+        "primaryKey": "code",
+        "columns": [
+            {
+                "name": "code",
+                "titles": {
+                    "en": "code",
+                    "de": "code"
+                },
+                "dc:description": {
+                    "en": "The unique code of the event.",
+                    "de": "Der eindeutige Code des Ereignisses"
+                },
+                "datatype": "string",
+                "required": true,
+                "propertyUrl": "evt:code"
+            },
+            {
+                "name": "name",
+                "titles": {
+                    "en": "name",
+                    "de": "name"
+                },
+                "dc:description": "The unique name of the event.",
+                "datatype": "string",
+                "required": true,
+                "propertyUrl": "sch:name"
+            },
+            {
+                "name": "site_code",
+                "titles": {
+                    "en": "site_code",
+                    "de": "site_code"
+                },
+                "dc:description": "The site code of the event. fk_site.csv",
+                "datatype": "integer",
+                "required": true,
+                "propertyUrl": "sch:location",
+                "valueUrl": "site/{site_code}"
+            },
+            {
+                "name": "organizer_code",
+                "titles": {
+                    "en": "organizer_code",
+                    "de": "veranstalter_code"
+                },
+                "dc:description": "The organizer code of the event. fk_organizer.csv",
+                "datatype": "integer",
+                "required": true,
+                "propertyUrl": "sch:organizer",
+                "valueUrl": "organizer/{organizer_code}"
+            },
+            {
+                "name": "start_date",
+                "titles": {
+                    "en": "start_date",
+                    "de": "start_datum"
+                },
+                "dc:description": "The start date of the event.",
+                "datatype": "date",
+                "required": true,
+                "propertyUrl": "sch:startDate"
+            },
+            {
+                "name": "end_date",
+                "titles": {
+                    "en": "end_date",
+                    "de": "end_datum"
+                },
+                "dc:description": "The end date of the event.",
+                "datatype": "date",
+                "required": true,
+                "propertyUrl": "sch:endDate"
+            },
+            {
+                "virtual": "true",
+                "propertyUrl": "rdf:type",
+                "valueUrl": "sch:Event"
+            },
+            {
+                "virtual": "true",
+                "propertyUrl": "rdf:type",
+                "valueUrl": "sch:Event"
+            },
+            {
+                "virtual": "true",
+                "aboutUrl": "organizer/{organizer_code}",
+                "propertyUrl": "rdf:type",
+                "valueUrl": "sch:Organization"
+                
+            }
+        ]
+    }
+}

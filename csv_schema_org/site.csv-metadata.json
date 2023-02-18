@@ -1,0 +1,36 @@
+{
+    "@context": "http://www.w3.org/ns/csvw",
+    "url": "site.csv",
+    "tableSchema": {
+        "columns": [{
+            "name": "code",
+            "titles": {
+                "en": "code",
+                "de": "code"
+            },
+            "dc:description": {
+                "en": "The unique code of the site.",
+                "de": "Der eindeutige Code des Ereignisses"
+            },
+            "datatype": "string",
+            "required": true
+        },{
+            "titles": {
+                "en": "name",
+                "de": "name"
+            },
+            "dc:description": "The unique name of the site.",
+            "datatype": "string",
+            "required": true
+        },{
+            "titles": {
+                "en": "address_code",
+                "de": "adresse_code"
+            },
+            "dc:description": "The address of the site. fk_address.csv",
+            "datatype": "string",
+            "required": true
+        }],
+        "primaryKey": "code"
+    }
+}

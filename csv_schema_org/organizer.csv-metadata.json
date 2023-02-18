@@ -1,0 +1,28 @@
+{
+    "@context": "http://www.w3.org/ns/csvw",
+    "url": "organizer.csv",
+    "tableSchema": {
+        "columns": [{
+            "name": "code",
+            "titles": {
+                "en": "code",
+                "de": "code"
+            },
+            "dc:description": {
+                "en": "The unique code of the organizer.",
+                "de": "Der eindeutige Code des Ereignisses"
+            },
+            "datatype": "string",
+            "required": true
+        },{
+            "titles": {
+                "en": "name",
+                "de": "name"
+            },
+            "dc:description": "The unique name of the organizer.",
+            "datatype": "string",
+            "required": true
+        }],
+        "primaryKey": "code"
+    }
+}
